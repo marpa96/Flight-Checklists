@@ -87,3 +87,6 @@ Ensure all the folowing documentation is placed in your flight bag
 ### Foreflight
 1. Ensure Route is set in Foreflight "Flights" tab
 2. Generate preliminary flight briefing on foreflight
+
+
+# ✅ Checklist Complete
