@@ -1,10 +1,12 @@
 # Checklist Title
 
+> **Approximate Completion Time:** Briefly state how long this takes to do on average
 > **Purpose:** Briefly state what this checklist accomplishes and when to use it.
->
-> **Important:** Add any safety warning, limitation, or governing-document reminder here.
 
-**Owner:** Name or role  
+> [!IMPORTANT]
+> Information essential to successful completion. Add any safety warning, limitation, or governing-document reminder here.
+
+**Owner:** Pablo Martinez 
 **Applies to:** Aircraft, equipment, operation, or situation  
 **Revision:** 0.1  
 **Last updated:** YYYY-MM-DD  
@@ -172,11 +174,10 @@ Use the snippets below when adapting this document. Delete this section when it 
 
 ## Compact Checklist Table
 
-
-| Item | Required state | Check |
-|---|---|:---:|
-| Example control | ON | [ ] |
-| Example value | Within limits | [ ] |
+| Item | Required state |
+|:---|:---:|
+| Example control | ON |
+| Example value | Within limits |
 
 
 ## Fill-In Fields
