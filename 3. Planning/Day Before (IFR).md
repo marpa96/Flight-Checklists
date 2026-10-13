@@ -12,7 +12,9 @@
 **Applies to:** ASEL IFR
 **Revision:** 0.1  
 **Last updated:** 2026-08-13  
-**Source of truth:** [Document title](https://example.com)
+**Source of truth:** [Federal Aviation Administration. U.S. Terminal Procedures
+Publication, [volume], “Supplemental Tables—Rate of Descent
+Table,” p. J3, effective Sep 03 2026–Oct 29 2026.](https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dtpp/)
 
 ---
 ## Personal Preparation
@@ -90,10 +92,8 @@ Ensure all the folowing documentation is placed in your flight bag
 
 ## Approach
 - [ ] Obtain climb/descent table [^2]
+[^2]: ![FAA climb and descent table](../FAA%20Assets/Climb%20and%20Descent%20Table.png) This will later be converted to an in-checklist calculator
 
-  ![FAA climb and descent table](../FAA%20Assets/Climb%20and%20Descent%20Table.png)
-
-[^2]: This will later be converted to an in-checklist calculator
  - [ ] Determine Approx groundspeed
  - [ ] Determine approach glideslope
  - [ ] Determine approx descent rate
