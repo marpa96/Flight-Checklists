@@ -10,7 +10,7 @@
 [![Last commit](https://img.shields.io/github/last-commit/marpa96/Flight-Checklists)](https://github.com/marpa96/Flight-Checklists/commits/main)
 [![Repository size](https://img.shields.io/github/repo-size/marpa96/Flight-Checklists)](https://github.com/marpa96/Flight-Checklists)
 
-[Browse checklists](#checklist-library) · [Use the template](#create-a-checklist) · [Contribute](#contributing)
+[Browse checklists](#checklist-library) · [Open calculator](https://marpa96.github.io/Flight-Checklists/calculators/wind/) · [Use the template](#create-a-checklist) · [Contribute](#contributing)
 
 </div>
 
@@ -32,6 +32,7 @@ The library is intended to support:
 ## Table of Contents
 
 - [Checklist Library](#checklist-library)
+- [Planning Calculators](#planning-calculators)
 - [Quick Start](#quick-start)
 - [Repository Structure](#repository-structure)
 - [Create a Checklist](#create-a-checklist)
@@ -51,6 +52,21 @@ The library is intended to support:
 
 > [!NOTE]
 > A “draft” status means the document may still contain placeholders or require validation for a particular aircraft, mission, or operating environment.
+
+## Planning Calculators
+
+### [Approach Wind & Groundspeed Calculator](https://marpa96.github.io/Flight-Checklists/calculators/wind/)
+
+Enter a desired approach course, approximate approach speed, and METAR wind group such as `24012G20KT`. The calculator estimates:
+
+- Wind-correction or crab angle
+- Corrected heading
+- Sustained-wind groundspeed
+- Headwind/tailwind and crosswind components
+- Separate correction and groundspeed at the reported gust
+
+> [!IMPORTANT]
+> The calculator becomes available at the link above after GitHub Pages is enabled for this repository. It is a planning aid, not approved performance data, and its assumptions and reference-direction warning must be reviewed before use.
 
 ## Quick Start
 

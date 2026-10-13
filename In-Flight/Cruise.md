@@ -13,6 +13,7 @@
 **Source of Truth:** [C172S POH § 4-16](https://www.befa.org/wp-content/uploads/2019/12/POH-Cessna-172S.pdf)
 
 ---
+
 ## Canon Checklist
 - [ ] **Power** - **2100 - 2700 RPM**
 > [!IMPORTANT]

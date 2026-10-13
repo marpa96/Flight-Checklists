@@ -9,9 +9,9 @@
 [^1]:The range of ATIS capture may vary from 20 NM to 60 NM.
 
 **Owner:** Pablo Martinez 
-**Applies to:** ASEL VFR
+**Applies to:** ASEL IFR
 **Revision:** 0.1  
-**Last updated:** 2026-07-31  
+**Last updated:** 2026-08-13  
 **Source of truth:** [Document title](https://example.com)
 
 ---
@@ -87,6 +87,16 @@ Ensure all the folowing documentation is placed in your flight bag
 ### Foreflight
 1. Ensure Route is set in Foreflight "Flights" tab
 2. Generate preliminary flight briefing on foreflight
+
+## Approach
+- [ ] Obtain climb/descent table [^2]
+
+  ![FAA climb and descent table](../FAA%20Assets/Climb%20and%20Descent%20Table.png)
+
+[^2]: This will later be converted to an in-checklist calculator
+ - [ ] Determine Approx groundspeed
+ - [ ] Determine approach glideslope
+ - [ ] Determine approx descent rate
 
 
 # ✅ Checklist Complete

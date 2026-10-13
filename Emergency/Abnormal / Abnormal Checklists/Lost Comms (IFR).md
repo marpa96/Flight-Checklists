@@ -35,7 +35,9 @@ Fly **highest of**:
 - Altitude ATC Advised you to expect
 - MEA/MOCA
 
-### Radios
+___
+
+### Radios - Return Point
 - [ ] ATC - Tune last known-good frequency
   - [ ] Ask for new frequency
 
@@ -48,13 +50,17 @@ Fly **highest of**:
   - [ ] Set ACTIVE COM1/COM2
 - [ ] **Flight Service** - **contact** over nearby NAVAID
 - [ ] GUARD (121.5 MHz) - Attempt calling
+- [ ] **Transponder - SET 7600**
+
+> [!IMPORTANT]
+> IF in VMC conditions. You must hereby continue the flight under VFR and land as soon as practical
 
 ### Handheld Radio
 
 > [!TIP]
 > Place the handheld radio close to the window for best reception
 
-- [ ] **Handheld Radio - Attempt ALL previous steps**
+- [ ] **Handheld Radio - Attempt ALL** previous steps **beggining from "Radios - Return Point"**
 
 ### If Handheld not working
 

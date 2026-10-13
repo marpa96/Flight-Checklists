@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#102235">
+  <meta name="description" content="Estimate wind correction angle, corrected heading, wind components, and groundspeed from a METAR wind group.">
+  <title>Approach Wind & Groundspeed Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="calculator.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <a class="back-link" href="../../">← Flight Checklists</a>
+      <p class="eyebrow">Planning tool</p>
+      <h1>Approach Wind & Groundspeed</h1>
+      <p>Estimate the crab angle and groundspeed needed to maintain a desired approach track.</p>
+    </header>
+
+    <aside class="warning" aria-label="Important limitation">
+      <strong>Planning estimate only.</strong> METAR winds are reported relative to true north, while runway numbers and many cockpit headings are magnetic. Convert both inputs to the same reference before relying on the result.
+    </aside>
+
+    <form id="wind-form" class="panel" novalidate>
+      <div class="field">
+        <label for="course">Desired approach course</label>
+        <div class="input-with-unit">
+          <input id="course" name="course" type="number" inputmode="decimal" min="0" max="360" step="1" value="180" required>
+          <span>°</span>
+        </div>
+        <small>The ground track you want to maintain, using the same true/magnetic reference as the wind.</small>
+      </div>
+
+      <div class="field">
+        <label for="airspeed">Approach speed</label>
+        <div class="input-with-unit">
+          <input id="airspeed" name="airspeed" type="number" inputmode="decimal" min="1" max="400" step="1" value="70" required>
+          <span>kt</span>
+        </div>
+        <small>Used as approximate true airspeed. IAS and TAS differ, especially with altitude and temperature.</small>
+      </div>
+
+      <div class="field">
+        <label for="wind">METAR wind</label>
+        <input id="wind" name="wind" type="text" inputmode="text" autocapitalize="characters" autocomplete="off" spellcheck="false" value="24012G20KT" placeholder="24012G20KT" required>
+        <small>Examples: <code>24012KT</code>, <code>24012G20KT</code>, or a full METAR containing a wind group.</small>
+      </div>
+
+      <button type="submit">Calculate</button>
+      <p id="error" class="error" role="alert" hidden></p>
+    </form>
+
+    <section id="results" class="results" aria-live="polite" hidden>
+      <div class="result-heading">
+        <div>
+          <p class="eyebrow">Estimated correction</p>
+          <h2 id="correction-summary">—</h2>
+        </div>
+        <div class="heading-badge">
+          <span>Fly approximately</span>
+          <strong id="corrected-heading">—</strong>
+        </div>
+      </div>
+
+      <div class="result-grid">
+        <article class="metric primary">
+          <span>Groundspeed</span>
+          <strong id="groundspeed">—</strong>
+          <small id="groundspeed-note">Sustained wind</small>
+        </article>
+        <article class="metric">
+          <span>Headwind / tailwind</span>
+          <strong id="longitudinal">—</strong>
+        </article>
+        <article class="metric">
+          <span>Crosswind</span>
+          <strong id="crosswind">—</strong>
+        </article>
+        <article class="metric">
+          <span>Wind parsed</span>
+          <strong id="wind-parsed">—</strong>
+        </article>
+      </div>
+
+      <div id="gust-panel" class="gust-panel" hidden>
+        <h3>At reported gust</h3>
+        <div class="gust-values">
+          <p><span>Correction</span><strong id="gust-correction">—</strong></p>
+          <p><span>Heading</span><strong id="gust-heading">—</strong></p>
+          <p><span>Groundspeed</span><strong id="gust-groundspeed">—</strong></p>
+        </div>
+      </div>
+
+      <details>
+        <summary>How this estimate works</summary>
+        <p>The calculator resolves the reported wind into headwind/tailwind and crosswind components relative to the desired ground track. It then solves the wind triangle for the crab angle required to cancel the crosswind and estimates groundspeed along the selected course.</p>
+        <p>It assumes steady wind, level vector geometry, and that the entered approach speed approximates true airspeed. Local terrain, wind shear, gust response, aircraft limitations, and pilot technique are not modeled.</p>
+      </details>
+    </section>
+
+    <footer>
+      <p>Verify calculations independently and use approved aircraft procedures and limitations.</p>
+    </footer>
+  </main>
+</body>
+</html>
