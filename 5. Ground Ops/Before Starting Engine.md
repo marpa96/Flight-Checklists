@@ -14,8 +14,8 @@
 
 ---
 ## Documentation
-- [ ] Tachometer - Record/ Take Picture
-- [ ] Hobbs Meter - Record/ Take Picture
+- [ ] **Tachometer** - Record/ Take Picture
+- [ ] **Hobbs Meter** - Record/ Take Picture
 - [ ] Preflight Inspection - COMPLETE
 ## Passenger Briefing
 - [ ] Seats and Seatbelts - Adjusted and Locked
