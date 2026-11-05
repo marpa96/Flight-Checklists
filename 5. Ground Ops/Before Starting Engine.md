@@ -37,3 +37,5 @@
 - [ ] Fuel Selector Valve - BOTH
 - [ ] Fuel Shutoff Valve - ON (Push full in)
 - [ ] Avionics Circuit Breakers - CHECK IN
+
+<!-- flitechek-id: 000014 -->

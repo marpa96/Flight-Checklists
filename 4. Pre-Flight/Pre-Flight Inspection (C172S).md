@@ -159,3 +159,5 @@ of cover.
 @ LEFT WING Trailing Edge
 1. Aileron-- CHECK for freedom of movement and security.
 2. Flap -- CHECK for security and condition.
+
+<!-- flitechek-id: 000013 -->

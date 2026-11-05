@@ -44,3 +44,5 @@
 - [ ] Avionics Master Switch - ON
 - [ ] Radios - ON
 - [ ] Flaps - RETRACT
+
+<!-- flitechek-id: 000015 -->

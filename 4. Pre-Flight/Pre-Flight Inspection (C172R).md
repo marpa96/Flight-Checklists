@@ -130,3 +130,5 @@ security.
  - [ ] Air Filter -- CHECK
  - [ ] Nose Wheel Strut and Tire -- CHECK for proper inflation of strut and general condition (weather checks, tread depth and wear, etc ... ) of tire.
  - [ ] Left Static Source Opening -- CHECK for blockage
+
+<!-- flitechek-id: 000012 -->

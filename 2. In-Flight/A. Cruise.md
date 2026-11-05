@@ -43,3 +43,5 @@
 ## Communications
 - [ ] Next Frequency - SET on Standby on COM1
 - [ ] Guard - Set active on COM2
+
+<!-- flitechek-id: 000006 -->

@@ -1,0 +1,192 @@
+# IDs match hidden comments. Filename order and catalog entry order do not matter.
+schema_version: 1
+checklists:
+  - id: "000001"
+    title: Day Before
+    procedure: day-before
+    category: normal
+    aircraft_models: []
+    flight_rules:
+      - IFR
+    tail_numbers: []
+    airfields: []
+    pilot: null
+    description: null
+    sequence: 10
+    revision: 2
+  - id: "000002"
+    title: Day Before
+    procedure: day-before
+    category: normal
+    aircraft_models: []
+    flight_rules:
+      - VFR
+    tail_numbers: []
+    airfields: []
+    pilot: null
+    description: null
+    sequence: 20
+    revision: 2
+  - id: "000003"
+    title: Day of
+    procedure: day-of
+    category: normal
+    aircraft_models: []
+    flight_rules:
+      - IFR
+    tail_numbers: []
+    airfields: []
+    pilot: null
+    description: null
+    sequence: 30
+    revision: 1
+  - id: "000004"
+    title: Day of
+    procedure: day-of
+    category: normal
+    aircraft_models: []
+    flight_rules:
+      - VFR
+    tail_numbers: []
+    airfields: []
+    pilot: null
+    description: null
+    sequence: 40
+    revision: 2
+  - id: "000005"
+    title: Pre-Drive
+    procedure: pre-drive
+    category: normal
+    aircraft_models: []
+    flight_rules: []
+    tail_numbers: []
+    airfields: []
+    pilot: null
+    description: null
+    sequence: 50
+    revision: 2
+  - id: "000006"
+    title: Cruise
+    procedure: cruise
+    category: normal
+    aircraft_models:
+      - C172S
+    flight_rules:
+      - VFR
+    tail_numbers: []
+    airfields: []
+    pilot: null
+    description: null
+    sequence: 60
+    revision: 1
+  - id: "000007"
+    title: In-Range
+    procedure: in-range
+    category: normal
+    aircraft_models: []
+    flight_rules:
+      - VFR
+    tail_numbers: []
+    airfields: []
+    pilot: null
+    description: null
+    sequence: 70
+    revision: 1
+  - id: "000008"
+    title: Descent
+    procedure: descent
+    category: normal
+    aircraft_models:
+      - C172S
+    flight_rules:
+      - VFR
+    tail_numbers: []
+    airfields: []
+    pilot: null
+    description: null
+    sequence: 80
+    revision: 1
+  - id: "000009"
+    title: Before Landing
+    procedure: before-landing
+    category: normal
+    aircraft_models: []
+    flight_rules: []
+    tail_numbers: []
+    airfields: []
+    pilot: null
+    description: null
+    sequence: 90
+    revision: 1
+  - id: "000010"
+    title: Lost Comms
+    procedure: lost-comms
+    category: emergency
+    aircraft_models: []
+    flight_rules:
+      - IFR
+    tail_numbers: []
+    airfields: []
+    pilot: null
+    description: null
+    sequence: 100
+    revision: 2
+  - id: "000012"
+    title: Pre-Flight Inspection
+    procedure: pre-flight-inspection
+    category: normal
+    aircraft_models:
+      - C172R
+    flight_rules:
+      - VFR
+    tail_numbers: []
+    airfields: []
+    pilot: null
+    description: Draft imported from the source repository; review applicability
+      before flight use.
+    sequence: 160
+    revision: 1
+  - id: "000013"
+    title: Pre-Flight Inspection
+    procedure: pre-flight-inspection
+    category: normal
+    aircraft_models:
+      - C172S
+    flight_rules:
+      - VFR
+    tail_numbers: []
+    airfields: []
+    pilot: null
+    description: Draft imported from the source repository; review applicability
+      before flight use. Filename and Markdown Applies to field disagree;
+      metadata follows the filename pending your review.
+    sequence: 170
+    revision: 1
+  - id: "000014"
+    title: Before Starting Engine
+    procedure: before-starting-engine
+    category: normal
+    aircraft_models: []
+    flight_rules:
+      - VFR
+    tail_numbers: []
+    airfields: []
+    pilot: null
+    description: Draft imported from the source repository; review applicability
+      before flight use.
+    sequence: 180
+    revision: 1
+  - id: "000015"
+    title: Starting Engine (With Battery)
+    procedure: starting-engine-with-battery-
+    category: normal
+    aircraft_models: []
+    flight_rules:
+      - VFR
+    tail_numbers: []
+    airfields: []
+    pilot: null
+    description: Draft imported from the source repository; review applicability
+      before flight use.
+    sequence: 190
+    revision: 1

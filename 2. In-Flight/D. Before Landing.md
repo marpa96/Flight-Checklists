@@ -20,3 +20,5 @@
 - [ ] **Mixture** - **RICH**
 - [ ] Landing/ Taxi **Lights** - **ON**
 - [ ] **Autopilot** - **OFF**
+
+<!-- flitechek-id: 000009 -->

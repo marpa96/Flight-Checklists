@@ -22,3 +22,5 @@
 - [ ] **NAV/GPS** Switch - **SET**
 - [ ] **Fuel Selector Valve** - **BOTH**
 - [ ] Wing **Flaps** - AS DESIRED (**Vs1 - 110 KIAS, Vs2-3 85 KIAS**)
+
+<!-- flitechek-id: 000008 -->
