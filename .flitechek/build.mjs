@@ -5,6 +5,7 @@ const root=path.resolve(import.meta.dirname,'..');
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(d=>d.name.startsWith('.')?[]:d.isDirectory()?walk(path.join(dir,d.name)):d.isFile()&&d.name.endsWith('.md')?[path.join(dir,d.name)]:[]);}
 const documents=walk(root).map(file=>({name:path.relative(root,file),markdown:fs.readFileSync(file,'utf8')})).filter(d=>checklistIDs(d.markdown).length);
 const pkg={format:'flitechek-library-v1',catalog:fs.readFileSync(root+'/catalog.yaml','utf8'),documents};
+pkg.folders=fs.readdirSync(root,{withFileTypes:true}).filter(d=>d.isDirectory()&&/^\d+\.\s+/.test(d.name)).map(d=>d.name.replace(/^\d+\.\s+/,''));
 if(process.env.GITHUB_SHA)pkg.source_commit=process.env.GITHUB_SHA;
 const items=validatePackage(pkg);
 // Keep author-entered revisions, but automatically bump a changed document's

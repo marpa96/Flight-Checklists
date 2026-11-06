@@ -93,7 +93,7 @@ checklists:
     description: null
     sequence: 50
     revision: 3
-    group: Planning
+    group: Pre-Flight
   - id: "000006"
     title: Cruise
     procedure: cruise
@@ -201,7 +201,7 @@ checklists:
       still has conflicting C172R/C172S Applies to or POH labels."
     sequence: 160
     revision: 2
-    group: Ground Ops
+    group: Pre-Flight
   - id: "000013"
     title: Pre-Flight Inspection
     procedure: pre-flight-inspection
@@ -219,7 +219,7 @@ checklists:
       still has conflicting C172R/C172S Applies to or POH labels."
     sequence: 170
     revision: 2
-    group: Ground Ops
+    group: Pre-Flight
   - id: "000014"
     title: Before Starting Engine
     procedure: before-starting-engine
