@@ -14,4 +14,4 @@ Use `group` for Emergency, In-Flight, Ground Ops, Post-Flight, or Planning. Emer
 
 Use `["*"]` for universal applicability and `["C172*"]` for all C172 models. `[]` means unassigned, and does not match an active filter. Filters combine with AND; values within a field combine with OR. Search, variants, next-procedure suggestions, and emergency results obey the saved flight profile. A running checklist is preserved and explicitly marked if it no longer matches.
 
-The initial metadata scopes ASEL checklists to C172R/C172S rather than declaring all aircraft universal. Both pre-flight inspection files have conflicting model/source labels and remain unassigned pending review. Markdown procedures were not rewritten.
+The initial metadata scopes ASEL checklists to C172R/C172S rather than declaring all aircraft universal. Both pre-flight inspection files have conflicting model/source labels; the owner has assigned C172R and C172S respectively in the catalog. Markdown procedures were not rewritten.
