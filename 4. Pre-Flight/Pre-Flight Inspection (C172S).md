@@ -5,7 +5,7 @@
 > **Purpose:** Briefly state what this checklist accomplishes and when to use it.
 
 **Owner:** Pablo Martinez 
-**Applies to:** C172R, VFR
+**Applies to:** C172S, VFR
 **Revision:** 0.1  
 **Last updated:** 2026-10-18  
 **Source of truth:** [C172S POH § 4-7](https://www.befa.org/wp-content/uploads/2019/12/POH-Cessna-172S.pdf)
