@@ -1,9 +1,12 @@
+# Groups: Emergency, In-Flight, Ground Ops, Post-Flight, Planning
+# ["*"] = universal; ["C172*"] = C172 family; [] = unassigned.
 # Copy this entry under checklists: in catalog.yaml.
 # Use the same ID in the Markdown: <!-- flitechek-id: 000123 -->
 - id: "000123"
   title: "Pre-flight"
   procedure: "preflight"
   category: "normal"
+  group: "Planning"
   aircraft_models: []
   flight_rules: []
   tail_numbers: []

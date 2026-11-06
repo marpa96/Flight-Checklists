@@ -1,0 +1,43 @@
+name: Publish FliteChek library
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: flitechek-library
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate and build (keep prior publication if validation fails)
+        shell: bash
+        run: |
+          if git show-ref --verify --quiet refs/remotes/origin/flitechek-library; then
+            git show origin/flitechek-library:library.flitechek.json > "$RUNNER_TEMP/previous-library.json"
+          fi
+          node .flitechek/build.mjs "$RUNNER_TEMP/library.flitechek.json" "$RUNNER_TEMP/previous-library.json"
+      - name: Publish generated library on its own branch
+        shell: bash
+        run: |
+          if git show-ref --verify --quiet refs/remotes/origin/flitechek-library; then
+            git checkout -B flitechek-library origin/flitechek-library
+          else
+            git checkout --orphan flitechek-library
+          fi
+          git rm -rf --ignore-unmatch .
+          cp "$RUNNER_TEMP/library.flitechek.json" library.flitechek.json
+          git add library.flitechek.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Publish validated FliteChek library'
+          git push origin HEAD:flitechek-library

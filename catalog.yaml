@@ -1,70 +1,96 @@
-# IDs match hidden comments. Filename order and catalog entry order do not matter.
 schema_version: 1
 checklists:
   - id: "000001"
     title: Day Before
     procedure: day-before
     category: normal
-    aircraft_models: []
+    aircraft_models:
+      - C172R
+      - C172S
     flight_rules:
       - IFR
-    tail_numbers: []
-    airfields: []
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
     pilot: null
-    description: null
+    description: Source specifies ASEL. Initially scoped to the two named aircraft
+      in this library; add other applicable models after review.
     sequence: 10
-    revision: 2
+    revision: 3
+    group: Planning
   - id: "000002"
     title: Day Before
     procedure: day-before
     category: normal
-    aircraft_models: []
+    aircraft_models:
+      - C172R
+      - C172S
     flight_rules:
       - VFR
-    tail_numbers: []
-    airfields: []
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
     pilot: null
-    description: null
+    description: Source specifies ASEL. Initially scoped to the two named aircraft
+      in this library; add other applicable models after review.
     sequence: 20
-    revision: 2
+    revision: 3
+    group: Planning
   - id: "000003"
     title: Day of
     procedure: day-of
     category: normal
-    aircraft_models: []
+    aircraft_models:
+      - "*"
     flight_rules:
       - IFR
-    tail_numbers: []
-    airfields: []
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
     pilot: null
     description: null
     sequence: 30
-    revision: 1
+    revision: 2
+    group: Planning
   - id: "000004"
     title: Day of
     procedure: day-of
     category: normal
-    aircraft_models: []
+    aircraft_models:
+      - C172R
+      - C172S
     flight_rules:
       - VFR
-    tail_numbers: []
-    airfields: []
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
     pilot: null
-    description: null
+    description: Source specifies ASEL. Initially scoped to the two named aircraft
+      in this library; add other applicable models after review.
     sequence: 40
-    revision: 2
+    revision: 3
+    group: Planning
   - id: "000005"
     title: Pre-Drive
     procedure: pre-drive
     category: normal
-    aircraft_models: []
-    flight_rules: []
-    tail_numbers: []
-    airfields: []
+    aircraft_models:
+      - "*"
+    flight_rules:
+      - "*"
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
     pilot: null
     description: null
     sequence: 50
-    revision: 2
+    revision: 3
+    group: Planning
   - id: "000006"
     title: Cruise
     procedure: cruise
@@ -73,25 +99,34 @@ checklists:
       - C172S
     flight_rules:
       - VFR
-    tail_numbers: []
-    airfields: []
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
     pilot: null
     description: null
     sequence: 60
-    revision: 1
+    revision: 2
+    group: In-Flight
   - id: "000007"
     title: In-Range
     procedure: in-range
     category: normal
-    aircraft_models: []
+    aircraft_models:
+      - C172R
+      - C172S
     flight_rules:
       - VFR
-    tail_numbers: []
-    airfields: []
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
     pilot: null
-    description: null
+    description: Source specifies ASEL. Initially scoped to the two named aircraft
+      in this library; add other applicable models after review.
     sequence: 70
-    revision: 1
+    revision: 2
+    group: In-Flight
   - id: "000008"
     title: Descent
     procedure: descent
@@ -100,93 +135,134 @@ checklists:
       - C172S
     flight_rules:
       - VFR
-    tail_numbers: []
-    airfields: []
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
     pilot: null
     description: null
     sequence: 80
-    revision: 1
+    revision: 2
+    group: In-Flight
   - id: "000009"
     title: Before Landing
     procedure: before-landing
-    category: normal
-    aircraft_models: []
-    flight_rules: []
-    tail_numbers: []
-    airfields: []
-    pilot: null
-    description: null
-    sequence: 90
-    revision: 1
-  - id: "000010"
-    title: Lost Comms
-    procedure: lost-comms
-    category: emergency
-    aircraft_models: []
-    flight_rules:
-      - IFR
-    tail_numbers: []
-    airfields: []
-    pilot: null
-    description: null
-    sequence: 100
-    revision: 2
-  - id: "000012"
-    title: Pre-Flight Inspection
-    procedure: pre-flight-inspection
-    category: normal
-    aircraft_models:
-      - C172R
-    flight_rules:
-      - VFR
-    tail_numbers: []
-    airfields: []
-    pilot: null
-    description: Draft imported from the source repository; review applicability
-      before flight use.
-    sequence: 160
-    revision: 1
-  - id: "000013"
-    title: Pre-Flight Inspection
-    procedure: pre-flight-inspection
     category: normal
     aircraft_models:
       - C172S
     flight_rules:
       - VFR
-    tail_numbers: []
-    airfields: []
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
     pilot: null
-    description: Draft imported from the source repository; review applicability
-      before flight use. Filename and Markdown Applies to field disagree;
-      metadata follows the filename pending your review.
+    description: Scoped to C172S from the cited C172S source and aircraft-specific
+      configuration items; not all ASEL aircraft.
+    sequence: 90
+    revision: 2
+    group: In-Flight
+  - id: "000010"
+    title: Lost Comms
+    procedure: lost-comms
+    category: emergency
+    aircraft_models:
+      - "*"
+    flight_rules:
+      - IFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: null
+    sequence: 100
+    revision: 3
+    group: Emergency
+  - id: "000012"
+    title: Pre-Flight Inspection
+    procedure: pre-flight-inspection
+    category: normal
+    aircraft_models: []
+    flight_rules:
+      - VFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "Needs aircraft assignment: filename / Applies to / cited POH
+      conflict (C172R versus C172S). Excluded when filtering by aircraft until
+      resolved."
+    sequence: 160
+    revision: 2
+    group: Ground Ops
+  - id: "000013"
+    title: Pre-Flight Inspection
+    procedure: pre-flight-inspection
+    category: normal
+    aircraft_models: []
+    flight_rules:
+      - VFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "Needs aircraft assignment: filename / Applies to / cited POH
+      conflict (C172R versus C172S). Excluded when filtering by aircraft until
+      resolved."
     sequence: 170
-    revision: 1
+    revision: 2
+    group: Ground Ops
   - id: "000014"
     title: Before Starting Engine
     procedure: before-starting-engine
     category: normal
-    aircraft_models: []
+    aircraft_models:
+      - C172*
     flight_rules:
       - VFR
-    tail_numbers: []
-    airfields: []
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
     pilot: null
-    description: Draft imported from the source repository; review applicability
-      before flight use.
+    description: "Applicability follows the source Markdown: C172*, VFR."
     sequence: 180
-    revision: 1
+    revision: 2
+    group: Ground Ops
   - id: "000015"
     title: Starting Engine (With Battery)
     procedure: starting-engine-with-battery-
     category: normal
-    aircraft_models: []
+    aircraft_models:
+      - C172*
     flight_rules:
       - VFR
-    tail_numbers: []
-    airfields: []
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
     pilot: null
-    description: Draft imported from the source repository; review applicability
-      before flight use.
+    description: "Applicability follows the source Markdown: C172*, VFR."
     sequence: 190
-    revision: 1
+    revision: 2
+    group: Ground Ops
+  - id: "000011"
+    title: Diversion — calculator trial
+    procedure: diversion-calculator-trial
+    category: emergency
+    aircraft_models:
+      - "*"
+    flight_rules:
+      - "*"
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: MOCK TEST — interface trial only
+    sequence: 110
+    revision: 2
+    group: Emergency
