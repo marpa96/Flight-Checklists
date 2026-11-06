@@ -284,3 +284,16 @@ checklists:
     description: "Test checklist copied from the template; applicability not assigned yet."
     sequence: 200
     revision: 1
+  - id: "00017"
+    title: "test checklist"
+    procedure: "test"
+    category: "normal"
+    group: "Ground Ops"
+    aircraft_models: ["*"]
+    flight_rules: ["*"]
+    tail_numbers: []
+    airfields: []
+    pilot: null
+    description: null
+    sequence: null
+    revision: 1
