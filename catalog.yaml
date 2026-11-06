@@ -271,3 +271,16 @@ checklists:
     sequence: 110
     revision: 2
     group: Emergency
+  - id: "000016"
+    title: Test checklist
+    procedure: test-checklist
+    category: normal
+    group: Ground Ops
+    aircraft_models: []
+    flight_rules: []
+    tail_numbers: []
+    airfields: []
+    pilot: null
+    description: "Test checklist copied from the template; applicability not assigned yet."
+    sequence: 200
+    revision: 1

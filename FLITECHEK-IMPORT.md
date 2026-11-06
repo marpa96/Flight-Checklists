@@ -18,3 +18,6 @@ The initial metadata scopes ASEL checklists to C172R/C172S rather than declaring
 
 
 Home buttons follow the numbered checklist folders (including empty folders). Pre-Flight is separate from Ground Ops. Emergency remains behind its own button. The folder takes precedence over YAML group for filed checklists; aircraft/rules applicability still comes from YAML. Support folders such as assets, calculators and Study are not flight checklist categories. Keep a .gitkeep in an empty folder so GitHub retains it.
+
+
+New checklist: copy CATALOG-ENTRY.yaml into catalog.yaml, choose an unused six-digit ID, and append `<!-- flitechek-id: 000016 -->` (using that ID) to the Markdown. Set applicability explicitly. The publisher rejects unregistered Markdown in numbered checklist folders instead of silently omitting it. Unassigned fields (`[]`) do not match active filters.

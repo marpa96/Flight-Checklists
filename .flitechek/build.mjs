@@ -3,7 +3,10 @@ import fs from 'node:fs';import path from 'node:path';
 import {checklistIDs,validatePackage} from './catalog.mjs';
 const root=path.resolve(import.meta.dirname,'..');
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(d=>d.name.startsWith('.')?[]:d.isDirectory()?walk(path.join(dir,d.name)):d.isFile()&&d.name.endsWith('.md')?[path.join(dir,d.name)]:[]);}
-const documents=walk(root).map(file=>({name:path.relative(root,file),markdown:fs.readFileSync(file,'utf8')})).filter(d=>checklistIDs(d.markdown).length);
+const candidates=walk(root).map(file=>({name:path.relative(root,file),markdown:fs.readFileSync(file,'utf8')}));
+const missing=candidates.filter(d=>/^\d+\.\s+/.test(d.name)&&!checklistIDs(d.markdown).length);
+if(missing.length)throw new Error('Checklist files are missing their hidden ID and catalog registration: '+missing.map(d=>d.name).join(', ')+'. Add a unique flitechek-id comment and matching catalog.yaml entry. Publication stopped; previous library preserved.');
+const documents=candidates.filter(d=>checklistIDs(d.markdown).length);
 const pkg={format:'flitechek-library-v1',catalog:fs.readFileSync(root+'/catalog.yaml','utf8'),documents};
 pkg.folders=fs.readdirSync(root,{withFileTypes:true}).filter(d=>d.isDirectory()&&/^\d+\.\s+/.test(d.name)).map(d=>d.name.replace(/^\d+\.\s+/,''));
 if(process.env.GITHUB_SHA)pkg.source_commit=process.env.GITHUB_SHA;
