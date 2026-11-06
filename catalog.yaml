@@ -197,9 +197,8 @@ checklists:
     airfields:
       - "*"
     pilot: null
-    description: "Needs aircraft assignment: filename / Applies to / cited POH
-      conflict (C172R versus C172S). Excluded when filtering by aircraft until
-      resolved."
+    description: "Aircraft assigned by owner to match filename. Source Markdown
+      still has conflicting C172R/C172S Applies to or POH labels."
     sequence: 160
     revision: 2
     group: Ground Ops
@@ -216,9 +215,8 @@ checklists:
     airfields:
       - "*"
     pilot: null
-    description: "Needs aircraft assignment: filename / Applies to / cited POH
-      conflict (C172R versus C172S). Excluded when filtering by aircraft until
-      resolved."
+    description: "Aircraft assigned by owner to match filename. Source Markdown
+      still has conflicting C172R/C172S Applies to or POH labels."
     sequence: 170
     revision: 2
     group: Ground Ops
