@@ -1,13 +1,13 @@
 # Starting Engine (With External Power)
 
 > [!WARNING]
-> **UNVERIFIED.** Condensed from the Cessna 172R POH (Revision 7), Section 4, page 4-13 to 4-14. Check every item against the POH for your aircraft's serial number before use.
+> **UNVERIFIED.** Adapted for the C172S from the Cessna 172R POH. Check every item against the C172S POH for your aircraft before use.
 
 **Owner:** Pablo Martinez
 **Applies to:** C172S, VFR, IFR
 **Revision:** 0.1 (unverified)
 **Last updated:** 2026-11-15
-**Source of truth:** [C172R POH § 4, p. 4-13 to 4-14](https://kerrville.cap.gov/media/cms/Cessna_172R_POH_712F3D6CCB3C7.pdf)
+**Source of truth:** [C172S POH § 4](https://www.befa.org/wp-content/uploads/2019/12/POH-Cessna-172S.pdf)
 
 ---
 - [ ] Throttle -- OPEN 1/4 INCH

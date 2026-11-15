@@ -4,7 +4,7 @@
 **Applies to:** C172S, VFR, IFR
 **Revision:** 1.0
 **Last updated:** 2026-11-15
-**Source of truth:** [C172R POH § 4, p. 4-15](https://kerrville.cap.gov/media/cms/Cessna_172R_POH_712F3D6CCB3C7.pdf)
+**Source of truth:** [C172S POH § 4](https://www.befa.org/wp-content/uploads/2019/12/POH-Cessna-172S.pdf)
 
 ---
 - [ ] Wing Flaps -- 0° to 10°
