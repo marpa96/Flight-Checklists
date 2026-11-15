@@ -284,3 +284,183 @@ checklists:
     description: null
     sequence: null
     revision: 2
+  - id: "000017"
+    title: "Starting Engine (With External Power)"
+    procedure: "starting-engine-with-external-power"
+    category: "normal"
+    group: "Ground Ops"
+    aircraft_models:
+      - C172R
+    flight_rules:
+      - VFR
+      - IFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "UNVERIFIED. Condensed from Cessna 172R POH Rev 7, Section 4, page 4-13 to 4-14. Verify against your aircraft's POH."
+    sequence: 195
+    revision: 1
+  - id: "000018"
+    title: "Before Takeoff"
+    procedure: "before-takeoff"
+    category: "normal"
+    group: "Ground Ops"
+    aircraft_models:
+      - C172R
+    flight_rules:
+      - VFR
+      - IFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "UNVERIFIED. Condensed from Cessna 172R POH Rev 7, Section 4, page 4-15. Verify against your aircraft's POH."
+    sequence: 198
+    revision: 1
+  - id: "000019"
+    title: "Normal Takeoff"
+    procedure: "normal-takeoff"
+    category: "normal"
+    group: "In-Flight"
+    aircraft_models:
+      - C172R
+    flight_rules:
+      - VFR
+      - IFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "UNVERIFIED. Condensed from Cessna 172R POH Rev 7, Section 4, page 4-15. Verify against your aircraft's POH."
+    sequence: 52
+    revision: 1
+  - id: "000020"
+    title: "Short Field Takeoff"
+    procedure: "short-field-takeoff"
+    category: "normal"
+    group: "In-Flight"
+    aircraft_models:
+      - C172R
+    flight_rules:
+      - VFR
+      - IFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "UNVERIFIED. Condensed from Cessna 172R POH Rev 7, Section 4, page 4-16. Verify against your aircraft's POH."
+    sequence: 54
+    revision: 1
+  - id: "000021"
+    title: "Enroute Climb"
+    procedure: "enroute-climb"
+    category: "normal"
+    group: "In-Flight"
+    aircraft_models:
+      - C172R
+    flight_rules:
+      - VFR
+      - IFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "UNVERIFIED. Condensed from Cessna 172R POH Rev 7, Section 4, page 4-16. Verify against your aircraft's POH."
+    sequence: 56
+    revision: 1
+  - id: "000022"
+    title: "Normal Landing"
+    procedure: "normal-landing"
+    category: "normal"
+    group: "In-Flight"
+    aircraft_models:
+      - C172R
+    flight_rules:
+      - VFR
+      - IFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "UNVERIFIED. Condensed from Cessna 172R POH Rev 7, Section 4, page 4-17. Verify against your aircraft's POH."
+    sequence: 92
+    revision: 1
+  - id: "000023"
+    title: "Short Field Landing"
+    procedure: "short-field-landing"
+    category: "normal"
+    group: "In-Flight"
+    aircraft_models:
+      - C172R
+    flight_rules:
+      - VFR
+      - IFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "UNVERIFIED. Condensed from Cessna 172R POH Rev 7, Section 4, page 4-17. Verify against your aircraft's POH."
+    sequence: 94
+    revision: 1
+  - id: "000024"
+    title: "Balked Landing"
+    procedure: "balked-landing"
+    category: "normal"
+    group: "In-Flight"
+    aircraft_models:
+      - C172R
+    flight_rules:
+      - VFR
+      - IFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "UNVERIFIED. Condensed from Cessna 172R POH Rev 7, Section 4, page 4-17. Verify against your aircraft's POH."
+    sequence: 96
+    revision: 1
+  - id: "000025"
+    title: "After Landing"
+    procedure: "after-landing"
+    category: "normal"
+    group: "Post-Flight"
+    aircraft_models:
+      - C172R
+    flight_rules:
+      - VFR
+      - IFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "UNVERIFIED. Condensed from Cessna 172R POH Rev 7, Section 4, page 4-17. Verify against your aircraft's POH."
+    sequence: 300
+    revision: 1
+  - id: "000026"
+    title: "Securing Airplane"
+    procedure: "securing-airplane"
+    category: "normal"
+    group: "Post-Flight"
+    aircraft_models:
+      - C172R
+    flight_rules:
+      - VFR
+      - IFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "UNVERIFIED. Condensed from Cessna 172R POH Rev 7, Section 4, page 4-17. Verify against your aircraft's POH."
+    sequence: 310
+    revision: 1
