@@ -1,10 +1,11 @@
 # Flows: the order you fly your checklists. FliteChek's "Next" follows the flow.
-# A step is one procedure, or a list of choices shown together, e.g. [normal-takeoff, short-field-takeoff].
-# Steps with no checklist for today's aircraft/rules are skipped. Edit in the FliteChek editor or here.
+# A step is one procedure, or a list of choices shown together. Steps with no checklist for
+# today's aircraft/rules are skipped. Written by the FliteChek editor.
 schema_version: 1
 flows:
   - id: normal-flight
-    title: Normal flight
+    title: "Normal flight"
+    aircraft_models: [C172S]
     steps:
       - day-before
       - day-of
