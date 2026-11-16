@@ -464,3 +464,93 @@ checklists:
     description: "Adapted for the C172S from the Cessna 172R POH Rev 7, Section 4, page 4-17; airspeeds updated and verified by owner."
     sequence: 310
     revision: 2
+  - id: "000027"
+    title: "Engine Failure During Takeoff Roll"
+    procedure: "engine-failure-during-takeoff-roll"
+    category: "emergency"
+    group: "Emergency"
+    aircraft_models:
+      - C172S
+    flight_rules:
+      - VFR
+      - IFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "UNVERIFIED. Condensed from Cessna 172S POH, Section 3, page 3-4. Verify against the C172S POH."
+    sequence: 120
+    revision: 1
+  - id: "000028"
+    title: "Engine Failure Immediately After Takeoff"
+    procedure: "engine-failure-immediately-after-takeoff"
+    category: "emergency"
+    group: "Emergency"
+    aircraft_models:
+      - C172S
+    flight_rules:
+      - VFR
+      - IFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "UNVERIFIED. Condensed from Cessna 172S POH, Section 3, page 3-4. Verify against the C172S POH."
+    sequence: 130
+    revision: 1
+  - id: "000029"
+    title: "Engine Failure During Flight (Restart)"
+    procedure: "engine-failure-during-flight"
+    category: "emergency"
+    group: "Emergency"
+    aircraft_models:
+      - C172S
+    flight_rules:
+      - VFR
+      - IFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "UNVERIFIED. Condensed from Cessna 172S POH, Section 3, page 3-5. Verify against the C172S POH."
+    sequence: 140
+    revision: 1
+  - id: "000030"
+    title: "Fire During Start On Ground"
+    procedure: "fire-during-start-on-ground"
+    category: "emergency"
+    group: "Emergency"
+    aircraft_models:
+      - C172S
+    flight_rules:
+      - VFR
+      - IFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "UNVERIFIED. Condensed from Cessna 172S POH, Section 3, page 3-7. Verify against the C172S POH."
+    sequence: 150
+    revision: 1
+  - id: "000031"
+    title: "Engine Fire In Flight"
+    procedure: "engine-fire-in-flight"
+    category: "emergency"
+    group: "Emergency"
+    aircraft_models:
+      - C172S
+    flight_rules:
+      - VFR
+      - IFR
+    tail_numbers:
+      - "*"
+    airfields:
+      - "*"
+    pilot: null
+    description: "UNVERIFIED. Condensed from Cessna 172S POH, Section 3, page 3-7. Verify against the C172S POH."
+    sequence: 160
+    revision: 1

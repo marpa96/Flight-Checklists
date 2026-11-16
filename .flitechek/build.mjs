@@ -8,6 +8,8 @@ const missing=candidates.filter(d=>/^\d+\.\s+/.test(d.name)&&!checklistIDs(d.mar
 if(missing.length)throw new Error('Checklist files are missing their hidden ID and catalog registration: '+missing.map(d=>d.name).join(', ')+'. Add a unique flitechek-id comment and matching catalog.yaml entry. Publication stopped; previous library preserved.');
 const documents=candidates.filter(d=>checklistIDs(d.markdown).length);
 const pkg={format:'flitechek-library-v1',catalog:fs.readFileSync(root+'/catalog.yaml','utf8'),documents};
+// Optional: the order checklists are flown in (validated against the catalog's procedures).
+if(fs.existsSync(root+'/flows.yaml'))pkg.flows=fs.readFileSync(root+'/flows.yaml','utf8');
 pkg.folders=fs.readdirSync(root,{withFileTypes:true}).filter(d=>d.isDirectory()&&/^\d+\.\s+/.test(d.name)).map(d=>d.name.replace(/^\d+\.\s+/,''));
 if(process.env.GITHUB_SHA)pkg.source_commit=process.env.GITHUB_SHA;
 const items=validatePackage(pkg);

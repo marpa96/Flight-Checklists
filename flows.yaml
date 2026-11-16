@@ -1,0 +1,24 @@
+# Flows: the order you fly your checklists. FliteChek's "Next" follows the flow.
+# A step is one procedure, or a list of choices shown together, e.g. [normal-takeoff, short-field-takeoff].
+# Steps with no checklist for today's aircraft/rules are skipped. Edit in the FliteChek editor or here.
+schema_version: 1
+flows:
+  - id: normal-flight
+    title: Normal flight
+    steps:
+      - day-before
+      - day-of
+      - pre-drive
+      - pre-flight-inspection
+      - before-starting-engine
+      - [starting-engine-with-battery-, starting-engine-with-external-power]
+      - before-takeoff
+      - [normal-takeoff, short-field-takeoff]
+      - enroute-climb
+      - cruise
+      - descent
+      - in-range
+      - before-landing
+      - [normal-landing, short-field-landing]
+      - after-landing
+      - securing-airplane

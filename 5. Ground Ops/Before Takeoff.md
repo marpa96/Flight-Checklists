@@ -33,4 +33,11 @@
 - [ ] Wing Flaps -- SET for takeoff (0° to 10°)
 - [ ] Brakes -- RELEASE
 
+## Emergency Brief
+- [ ] Brief: [Engine failure during takeoff roll](flitechek:brief/engine-failure-during-takeoff-roll)
+- [ ] Brief: [Engine failure immediately after takeoff](flitechek:brief/engine-failure-immediately-after-takeoff)
+- [ ] Brief: [Engine failure during flight](flitechek:brief/engine-failure-during-flight)
+- [ ] Brief: [Fire during start on ground](flitechek:brief/fire-during-start-on-ground)
+- [ ] Brief: [Engine fire in flight](flitechek:brief/engine-fire-in-flight)
+
 <!-- flitechek-id: 000018 -->
