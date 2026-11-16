@@ -127,7 +127,7 @@
       "markdown": "# Securing Airplane\n\n**Owner:** Pablo Martinez\n**Applies to:** C172S, VFR, IFR\n**Revision:** 1.0\n**Last updated:** 2026-11-15\n**Source of truth:** [C172S POH § 4](https://www.befa.org/wp-content/uploads/2019/12/POH-Cessna-172S.pdf)\n\n---\n- [ ] Parking Brake -- SET\n- [ ] Electrical Equipment, Autopilot (if installed) -- OFF\n- [ ] Avionics Master Switch -- OFF\n- [ ] Mixture -- IDLE CUTOFF (pulled full out)\n- [ ] Ignition Switch -- OFF\n- [ ] Master Switch -- OFF\n- [ ] Control Lock -- INSTALL\n- [ ] Fuel Selector Valve -- LEFT or RIGHT (prevents cross-feeding)\n- [ ] Keys -- Set on Glareshield/ In Binder\n\n<!-- flitechek-id: 000026 -->\n"
     }
   ],
-  "flows": "# Flows: the order you fly your checklists. FliteChek's \"Next\" follows the flow.\n# A step is one procedure, or a list of choices shown together, e.g. [normal-takeoff, short-field-takeoff].\n# Steps with no checklist for today's aircraft/rules are skipped. Edit in the FliteChek editor or here.\nschema_version: 1\nflows:\n  - id: normal-flight\n    title: Normal flight\n    steps:\n      - day-before\n      - day-of\n      - pre-drive\n      - pre-flight-inspection\n      - before-starting-engine\n      - [starting-engine-with-battery-, starting-engine-with-external-power]\n      - before-takeoff\n      - [normal-takeoff, short-field-takeoff]\n      - enroute-climb\n      - cruise\n      - descent\n      - in-range\n      - before-landing\n      - [normal-landing, short-field-landing]\n      - after-landing\n      - securing-airplane\n",
+  "flows": "# Flows: the order you fly your checklists. FliteChek's \"Next\" follows the flow.\n# A step is one procedure, or a list of choices shown together. Steps with no checklist for\n# today's aircraft/rules are skipped. Written by the FliteChek editor.\nschema_version: 1\nflows:\n  - id: normal-flight\n    title: \"Normal flight\"\n    aircraft_models: [C172S]\n    steps:\n      - day-before\n      - day-of\n      - pre-drive\n      - pre-flight-inspection\n      - before-starting-engine\n      - [starting-engine-with-battery-, starting-engine-with-external-power]\n      - before-takeoff\n      - [normal-takeoff, short-field-takeoff]\n      - enroute-climb\n      - cruise\n      - descent\n      - in-range\n      - before-landing\n      - [normal-landing, short-field-landing]\n      - after-landing\n      - securing-airplane\n",
   "folders": [
     "Emergency",
     "In-Flight",
@@ -136,5 +136,5 @@
     "Ground Ops",
     "Post-Flight"
   ],
-  "source_commit": "9c67d643e8018323b7280685f075cc2103899d5a"
+  "source_commit": "c3c38b4516e970dc0f6f48b82cb39fd3435454e5"
 }
